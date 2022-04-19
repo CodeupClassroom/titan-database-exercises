@@ -11,7 +11,7 @@ Select 'Albums with the genre ''disco''' as caption, a.* from albums a where  ge
 #Albums by 'Whitney Houston' (...or maybe an artist of your choice)
 select 'Albums by ''Whitney Houston''' as caption, a.* from albums a where artist like '%Whitney Houston%';
 
--- deletes based on the above select statements
+-- delgit etes based on the above select statements
 DELETE FROM albums a WHERE release_date > 1991;
 delete from albums a where  genre = 'disco';
 delete from albums a where artist like '%Whitney Houston%';
