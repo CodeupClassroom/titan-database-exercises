@@ -41,7 +41,8 @@ CREATE TABLE IF NOT EXISTS labels (
 
 
 INSERT INTO users (name, email, job_title, address)
-VALUES ('Dane Miller', 'dane.miller@codeup.com','Web Developer and Instructor', '1234 my place');
+VALUES ('Dane Miller', 'dane.miller@codeup.com','Web Developer and Instructor', '1234 my place'),
+       ('Justin Reich', 'just@codeup.com','Web Developer and Instructor', '1234 his place');
 
 INSERT INTO posts (user_id, title, body)
 VALUES (1,'My first post', 'lots of text and stuff here');
