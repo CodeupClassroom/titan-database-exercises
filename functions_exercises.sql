@@ -6,8 +6,6 @@ USE employees;
 SELECT CONCAT(first_name, ' ', last_name)
 FROM employees
 WHERE last_name LIKE 'e%e'
-ORDER BY emp_no DESC;
-
 
 # Problem 3
 SELECT COUNT(*)
@@ -50,4 +48,4 @@ SELECT CONCAT('Days at company: ', DATEDIFF(NOW(), hire_date)) AS `Days at Compa
 FROM employees
 WHERE hire_date LIKE '199%'
   AND birth_date LIKE '%12-25'
-ORDER BY birth_date ASC, hire_date DESC;
+SELECT COUNT(*) FROM employees WHERE MONTH(birth_date) = 12 AND DAY(birth_date) = 25;
