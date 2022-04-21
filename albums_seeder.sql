@@ -1,4 +1,6 @@
-use codeup_teest_db;
+use codeup_test_db;
+
+DROP TABLE persons;
 
 TRUNCATE albums;
 
